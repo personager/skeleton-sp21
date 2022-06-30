@@ -13,11 +13,11 @@ public class IntListExercises {
             return;
         }
         IntList head = lst;
-        while (head.size() >= 1) {
+        while (head.size() > 1) {
             head.first += c;
             head = head.rest;
         }
-        //head.first += c;
+        head.first += c;
     }
 
     /**
